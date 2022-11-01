@@ -2,11 +2,6 @@ const mongoose = require('mongoose')
 
 const orderSchema = new mongoose.Schema({
   // ORDER INFORMATION
-  order_id: {
-    type: Number,
-    required: true,
-    unique: true
-  },
   date: {
     type: Date,
     required: true

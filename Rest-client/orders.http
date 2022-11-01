@@ -1,4 +1,4 @@
-@baseURL = http://localhost:3040
+@baseURL = https://cna-orderservice.azurewebsites.net/
 //@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzM4MTk0NzdjYzAxYjg5YmE1YmZjY2EiLCJlbWFpbCI6ImthbGxlQGFyY2FkYS5maSIsImlhdCI6MTY2NTM4OTE5OCwiZXhwIjoxNjY1NDc1NTk4fQ.zGTXRQ5K1gxHFloACWs43hFjGCaxMThWXOZz9YTXz3A
 GET {{baseURL}}/orders/
 Content-Type: application/json
@@ -16,7 +16,6 @@ POST {{baseURL}}/orders/
 Content-Type: application/json
 
 {
-    "order_id": 1001,
     "date": "2022-11-1",
     "product_id": "12345",
     "productName": "BeerBrosSpecial",

@@ -21,7 +21,6 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
             const orders = new Order({
-                order_id: req.body.order_id,
                 date: req.body.date,
                 product_id: req.body.product_id,
                 productName: req.body.productName,
