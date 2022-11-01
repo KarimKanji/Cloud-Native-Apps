@@ -14,10 +14,23 @@ Content-Type: application/json
 
 POST {{baseURL}}/orders/
 Content-Type: application/json
+
 {
-    "id": "6343d374da0e4f5d798749ee",
-    "startDate": "2021-12-19",
-    "endDate": "2021-12-20"
+    "order_id": 1001,
+    "date": "2022-11-1",
+    "product_id": "12345",
+    "productName": "BeerBrosSpecial",
+    "amount": 2,
+    "price": "8.45",
+    "firstName": "Mr.Foo",
+    "lastName": "Bar",
+    "adress": "Jan-Magnussons Plats 2",
+    "postCode": "00560",
+    "postalDistrict": "Helsinki",
+    "country": "Finland",
+    "phoneNumber": "0441240567",
+    "email": "fooo.barsson123@gmail.com",
+    "orderType": "Home delivery"
 }
 
 ###

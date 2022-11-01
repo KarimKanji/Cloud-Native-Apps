@@ -14,9 +14,8 @@ const orderSchema = new mongoose.Schema({
 
   // BASKET INFORMATION
   product_id: {
-    type: Number,
-    required: true,
-    unique: true
+    type: String,
+    required: true
   },
   productName: {
     type: String,
@@ -27,7 +26,7 @@ const orderSchema = new mongoose.Schema({
     required: true
   },
   price: {
-    type: Number,
+    type: String,
     required: true
   },
   
@@ -46,7 +45,7 @@ const orderSchema = new mongoose.Schema({
     required: true
   },
   postCode: {
-    type: Number,
+    type: String,
     required: true
   },
   postalDistrict: {
@@ -58,14 +57,12 @@ const orderSchema = new mongoose.Schema({
     required: true
   },
   phoneNumber: {
-    type: Number,
+    type: String,
     required: true,
-    unique: true
   },
   email: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   
   // ORDER FORMAT
