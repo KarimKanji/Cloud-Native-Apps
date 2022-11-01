@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-const PORT = process.env.PORT || 3030
+const PORT = process.env.PORT || 3040
 
 require('dotenv').config()
 
@@ -23,14 +23,10 @@ const runAlways = (req, res, next) => {
     next()
 }
 
-const userRouter = require('./routes/users')
-app.use('/users', userRouter)
+const orderRouter = require('./routes/orders')
+app.use('/orders', orderRouter)
 
-const cabinRouter = require('./routes/cabins')
-app.use('/cabins', cabinRouter)
 
-const bookingRouter = require('./routes/bookings')
-app.use('/bookings', bookingRouter)
 
 app.use(runAlways)
 
